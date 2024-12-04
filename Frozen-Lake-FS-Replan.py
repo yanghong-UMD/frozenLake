@@ -124,10 +124,11 @@ def print_frozen_lake_state(obs,size):
 def run_pyperplan(domain_file, problem_file, solution_file):
     start_time = time.time()
     subprocess.run(
-        ["python", "pyperplan-main/pyperplan", "-H", "hff", "-s", "gbf", domain_file, problem_file],
+        ["python", "-m", "pyperplan", "-H", "hff", "-s", "gbf", domain_file, problem_file],
         stdout=subprocess.PIPE,
         text=True
     )
+
     planner_time = time.time() - start_time
     with open(solution_file, 'r') as file:
         return file.readlines(), planner_time

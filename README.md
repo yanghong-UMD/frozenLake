@@ -75,9 +75,24 @@ python Frozen-Lake-QLearning.py
 3. Configure solver parameters
 4. Run and analyze results
 
-## References
+## Installation
 
-This program uses code from https://github.com/aibasel/pyperplan and https://github.com/tomsilver/pddlgym.
+To run the code, ensure the following dependencies are installed:
+
+1. **pddlgym**  
+   Install using:
+   `pip install pddlgym`  
+   More information can be found at the [pddlgym GitHub repository](https://github.com/tomsilver/pddlgym).
+
+2. **pyperplan**  
+   Install using:
+   `pip install pyperplan`  
+   More information can be found at the [pyperplan GitHub repository](https://github.com/aibasel/pyperplan).
+
+## References
+This program uses code from:
+- [pyperplan](https://github.com/aibasel/pyperplan)
+- [pddlgym](https://github.com/tomsilver/pddlgym)
 
 ## Author
 

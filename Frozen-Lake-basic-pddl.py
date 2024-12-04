@@ -28,7 +28,7 @@ def run_pyperplan(domain_file, problem_file, solution_file):
     start_time = time.time() 
     # Run pyperplan using subprocess
     subprocess.run(
-        ["python", "pyperplan-main/pyperplan", "-H", "hff", "-s", "gbf", domain_file, problem_file],
+        ["python", "-m", "pyperplan", "-H", "hff", "-s", "gbf", domain_file, problem_file],
         stdout=subprocess.PIPE,
         text=True
     )
